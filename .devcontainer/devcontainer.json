@@ -1,7 +1,7 @@
 {
   "name": "Claude Code + Agent Skills",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
-  "postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash",
+  "postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash && npx skills add vercel-labs/agent-skills --skill '*' --agent claude-code --copy --yes",
   "customizations": {
     "vscode": {
       "settings": {
